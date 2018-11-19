@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>策略模式实现缓动动画</title>
+</head>
+<body>
+  <div
+    style="position: absolute;background: aqua"
+    id="div"
+  >
+    我是div
+  </div>
+  <script src="./5.js"></script>
+  <script>
+    var div = document.getElementById('div');
+    var animate = new Animate(div);
+    animate.start('left', 500, 1000, 'strongEaseOut');
+  </script>
+</body>
+</html>
